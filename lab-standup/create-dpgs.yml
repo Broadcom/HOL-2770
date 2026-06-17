@@ -1,0 +1,74 @@
+---
+  - hosts: 127.0.0.1
+    connection: local
+    become: no
+    vars_files:
+      - environment.yml
+    tasks:
+      - name: Create ANS Management DPG
+        community.vmware.vmware_dvs_portgroup:
+          hostname: '{{ vc_wld01_hostname }}'
+          username: '{{ vc_wld01_username }}'
+          password: '{{ vc_wld01_password }}'
+          portgroup_name: "{{ vc_wld01_ans_network }}"
+          switch_name: '{{ vc_wld1_vds_name }}'
+          vlan_trunk: false
+          vlan_id: 9
+          port_binding: static
+          port_allocation: elastic
+          state: present
+          validate_certs: no
+          port_policy: 
+            vendor_config_override: true
+        delegate_to: localhost 
+      
+      - name: Create External Network DPG
+        community.vmware.vmware_dvs_portgroup:
+          hostname: '{{ vc_wld01_hostname }}'
+          username: '{{ vc_wld01_username }}'
+          password: '{{ vc_wld01_password }}'
+          portgroup_name: '{{ external-network }}'
+          switch_name: '{{ vc_wld1_vds_name }}'
+          vlan_trunk: false
+          vlan_id: 1000
+          port_binding: static
+          port_allocation: elastic
+          state: present
+          validate_certs: no
+          port_policy: 
+            vendor_config_override: true
+        delegate_to: localhost
+
+      - name: Create External-nk Network DPG
+        community.vmware.vmware_dvs_portgroup:
+          hostname: '{{ vc_wld01_hostname }}'
+          username: '{{ vc_wld01_username }}'
+          password: '{{ vc_wld01_password }}'
+          portgroup_name: '{{ external-network-nk }}'
+          switch_name: '{{ vc_wld1_vds_name }}'
+          vlan_trunk: false
+          vlan_id: 1001
+          port_binding: static
+          port_allocation: elastic
+          state: present
+          validate_certs: no
+          port_policy: 
+            vendor_config_override: true
+        delegate_to: localhost
+
+      - name: Create External-ir Network DPG
+        community.vmware.vmware_dvs_portgroup:
+          hostname: '{{ vc_wld01_hostname }}'
+          username: '{{ vc_wld01_username }}'
+          password: '{{ vc_wld01_password }}'
+          portgroup_name: '{{ external-network-ir }}'
+          switch_name: '{{ vc_wld1_vds_name }}'
+          vlan_trunk: false
+          vlan_id: 1002
+          port_binding: static
+          port_allocation: elastic
+          state: present
+          validate_certs: no
+          port_policy: 
+            vendor_config_override: true
+        delegate_to: localhost

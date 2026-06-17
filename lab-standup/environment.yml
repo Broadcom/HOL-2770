@@ -1,0 +1,66 @@
+---
+    # ------------------------------------------------------------
+    # Variables for Lab Standup.
+    # Description: Variables needed for the base automation that will be used by the lab to stand up the environment.
+    # ------------------------------------------------------------
+    
+    #Read lab [password into a varibale to pass to ansible scripts]
+    lab_pw: "{{ lookup('file', '/home/holuser/creds.txt')}}"
+
+    #Management vCenter related variables.
+    vc_mgmt_display_name : "vcenter-mgmt"
+    vc_mgmt_hostname: "vc-mgmt-a.site-a.vcf.lab"
+    vc_mgmt_username: "administrator@vsphere.local"
+    vc_mgmt_password: "{{ lab_pw }}"
+    vc_mgmt_datacenter: "dc-a"
+    vc_mgmt_vds_name: "vds01-mgmt-01a"
+    vc_mgmt_cluster: "cluster-mgmt-01a"
+    vc_mgmt_datastore: "vsan-mgmt-01a"
+    
+    
+    #WLD01 vCenter Related Variables
+    vc_wld01_display_name : "vcenter-wld01"
+    vc_wld01_hostname: "vc-wld01-a.site-a.vcf.lab"
+    vc_wld01_username: "administrator@vsphere.local"
+    vc_wld01_password: "{{ lab_pw }}"
+    vc_wld01_datacenter: "wld-01a-DC"
+    vc_wld01_vds_name: "vds01-wld01-01a"
+    vc_wld01_ans_network: "ans-vds01-wld01-01a"
+    vc_wld01_mgmt_dpg: "mgmt-vds01-wld01-01a"
+    vc_wld01_cluster1: "cluster-wld01-01a"
+    vc_wld01_cluster2: "cluster-wld01-02a"
+    vc_wld01_datastore: "cluster-wld01-01a-vsan01"
+    vc_wld01_ext_datastore: "esx-08a.Datastore"
+    vc_wld01_ans_network: "ans-vds01-wld01-01a"
+    #External Network Variables
+    external-network: "external-network"
+    external-network-nk: "external-network-nk"
+    external-network-ir: "external-network-ir"
+
+    #OVA Related Items
+    ova_path: "/home/holuser/l2vms/"
+    dns_server: "10.1.1.1"
+    ntp_server: "10.1.1.1"
+    search_domain: "vcf.sdd.lab"
+    default_gateway:  "10.1.1.1"
+    edge_hostname1: "edge1-wld"
+    edge_hostname2: "edge2-wld"
+    edge_dpg1: "VCF-edge_EC-02_PG-mgmt-vds01-External-1"
+    edge_dpg2: "VCF-edge_EC-02_PG-mgmt-vds01-External-2"
+    edge_uplink1: "VCF-edge_EC-02_segment_uplink1_11"
+    edge_uplink2: "VCF-edge_EC-02_segment_uplink2_12"
+
+    #NSX-T Related Variables
+    nsxt_mgmt_hostname: "nsx-mgmt-a.site-a.vcf.lab"
+    nsxt_mgmt_username: "admin"
+    nsxt_mgmt_password: "{{ lab_pw }}"
+    nsxt_wld01_hostname: "nsx-wld01.site-a.vcf.lab"
+    nsxt_wld01_username: "admin"
+    nsxt_wld01_password: "{{ lab_pw }}"
+    edge_transport_zone_display_name: "VCF-edge_EC-02_uplink-tz"
+    transport_zone_display_name: "mgmt-domain-tz-overlay01"
+    edge_cluster: "EC-02"
+    tier0_display_name: "wld1-t0"
+    tier1_display_name: "3-Tier-T1"
+    edge_uplink_policy1: "VCF-edge_EC-01_uplink1-named-teaming-policy"
+    edge_uplink_policy2: "VCF-edge_EC-01_uplink2-named-teaming-policy"
