@@ -28,7 +28,7 @@
           username: '{{ vc_wld01_username }}'
           password: '{{ vc_wld01_password }}'
           portgroup_name: '{{ external-network }}'
-          switch_name: '{{ vc_wld1_vds_name }}'
+          switch_name: '{{ vc_wld01_vds_name }}'
           vlan_trunk: false
           vlan_id: 1000
           port_binding: static
@@ -45,7 +45,7 @@
           username: '{{ vc_wld01_username }}'
           password: '{{ vc_wld01_password }}'
           portgroup_name: '{{ external-network-nk }}'
-          switch_name: '{{ vc_wld1_vds_name }}'
+          switch_name: '{{ vc_wld01_vds_name }}'
           vlan_trunk: false
           vlan_id: 1001
           port_binding: static
