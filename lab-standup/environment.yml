@@ -33,9 +33,9 @@
     vc_wld01_ext_datastore: "esx-08a.Datastore"
     vc_wld01_ans_network: "ans-vds01-wld01-01a"
     #External Network Variables
-    external-network: "external-network"
-    external-network-nk: "external-network-nk"
-    external-network-ir: "external-network-ir"
+    external_network: "external-network"
+    external_network_nk: "external-network-nk"
+    external_network_ir: "external-network-ir"
 
     #OVA Related Items
     ova_path: "/home/holuser/l2vms/"
