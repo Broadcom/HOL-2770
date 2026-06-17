@@ -21,7 +21,7 @@
     #WLD01 vCenter Related Variables
     vc_wld01_display_name : "vcenter-wld01"
     vc_wld01_hostname: "vc-wld01-a.site-a.vcf.lab"
-    vc_wld01_username: "administrator@vsphere.local"
+    vc_wld01_username: "administrator@wld.sso"
     vc_wld01_password: "{{ lab_pw }}"
     vc_wld01_datacenter: "dc-wld-01a"
     vc_wld01_vds_name: "vds01-wld01-01a"
