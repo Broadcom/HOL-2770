@@ -5,6 +5,10 @@
     vars_files:
       - environment.yml
     tasks:
+      - name: verify hol variable is read properly
+        ansible.builtin.debug:
+          msg: "Lab password is shown as {{vc_wld01_password}}"
+
       - name: Create ANS Management DPG
         community.vmware.vmware_dvs_portgroup:
           hostname: '{{ vc_wld01_hostname }}'
