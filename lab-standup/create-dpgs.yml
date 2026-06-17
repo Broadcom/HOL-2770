@@ -11,7 +11,7 @@
           username: '{{ vc_wld01_username }}'
           password: '{{ vc_wld01_password }}'
           portgroup_name: "{{ vc_wld01_ans_network }}"
-          switch_name: '{{ vc_wld1_vds_name }}'
+          switch_name: '{{ vc_wld01_vds_name }}'
           vlan_trunk: false
           vlan_id: 9
           port_binding: static
