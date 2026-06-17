@@ -62,7 +62,7 @@
           username: '{{ vc_wld01_username }}'
           password: '{{ vc_wld01_password }}'
           portgroup_name: '{{ external-network-ir }}'
-          switch_name: '{{ vc_wld1_vds_name }}'
+          switch_name: '{{ vc_wld01_vds_name }}'
           vlan_trunk: false
           vlan_id: 1002
           port_binding: static
