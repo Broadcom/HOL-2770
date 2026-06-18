@@ -45,8 +45,8 @@
     default_gateway:  "10.1.1.1"
     edge_hostname1: "edge1-wld"
     edge_hostname2: "edge2-wld"
-    edge_dpg1: "VCF-edge_EC-02_PG-mgmt-vds01-External-1"
-    edge_dpg2: "VCF-edge_EC-02_PG-mgmt-vds01-External-2"
+    edge_dpg1: "uplink01-vds01-wld01-01a"
+    edge_dpg2: "uplink01-vds01-wld01-02a"
     edge_uplink1: "VCF-edge_EC-02_segment_uplink1_11"
     edge_uplink2: "VCF-edge_EC-02_segment_uplink2_12"
 
