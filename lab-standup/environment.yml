@@ -54,7 +54,7 @@
     nsxt_mgmt_hostname: "nsx-mgmt-a.site-a.vcf.lab"
     nsxt_mgmt_username: "admin"
     nsxt_mgmt_password: "{{ lab_pw }}"
-    nsxt_wld01_hostname: "nsx-wld01.site-a.vcf.lab"
+    nsxt_wld01_hostname: "nsx-wld01-a.site-a.vcf.lab"
     nsxt_wld01_username: "admin"
     nsxt_wld01_password: "{{ lab_pw }}"
     edge_transport_zone_display_name: "nsx-vlan-transportzone"
