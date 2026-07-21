@@ -53,19 +53,19 @@
               scope: 
                 - "/infra/domains/default/groups/app-group"
                 - "/infra/domains/default/groups/web-group"
-      #      - action: "ALLOW"
-      #        id: 3055
-      #        sequence_number: 130
-      #        display_name: "app to db"
-      #        source_groups: ["/infra/domains/default/groups/app-group"]
-      #        destination_groups: ["/infra/domains/default/groups/db-group"]
-      #        services: ["/infra/services/MySQL"]
-      #        ip_protocol: IPV4
-      #        direction: "IN_OUT"
-      #        logged: true
-      #        scope: 
-      #          - "/infra/domains/default/groups/app-group"
-      #          - "/infra/domains/default/groups/db-group"
+#           - action: "ALLOW"
+#             id: 3055
+#             sequence_number: 130
+#             display_name: "app to db"
+#             source_groups: ["/infra/domains/default/groups/app-group"]
+#             destination_groups: ["/infra/domains/default/groups/db-group"]
+#             services: ["/infra/services/MySQL"]
+#             ip_protocol: IPV4
+#             direction: "IN_OUT"
+#             logged: true
+#             scope: 
+#             - "/infra/domains/default/groups/app-group"
+#             - "/infra/domains/default/groups/db-group"
             - action: "DROP"
               id: 3057
               sequence_number: 140
@@ -81,3 +81,4 @@
                 - "/infra/domains/default/groups/app-group"
                 - "/infra/domains/default/groups/db-group"
                 - "/infra/domains/default/groups/web-group"
+        delegate_to: localhost
