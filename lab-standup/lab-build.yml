@@ -1,0 +1,21 @@
+- hosts: localhost
+  connection: local
+  collections:
+    - vmware.ansible_for_nsxt
+
+  tasks:
+  - include_vars: environment.yml
+
+  - name: Update Lab Configuration
+    block:
+      
+    # Build 3-Tier-App Policy
+      - name: vDefend 3-Tier-App Configuration | Deploy 3-Tier-App Policies
+        include_tasks:
+          file: ./3-tier-app.yml
+      #- name: vDefend Group Configuration | Add valid Groups
+      #  include_tasks:
+      #    file: ./group-restore.yml
+      #- name: Updated T0 config | Add valid Groups
+      #  include_tasks:
+      #    file: ./update-t0-cofnig.yml
