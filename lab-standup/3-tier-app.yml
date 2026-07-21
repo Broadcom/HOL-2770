@@ -19,7 +19,7 @@
           category: "Application"
           rules:
             - action: "DROP"
-              id: 3058
+            #  id: 3058
               sequence_number: 100
               display_name: "Block Web to Web"
               source_groups: ["/infra/domains/default/groups/web-group"]
@@ -28,10 +28,11 @@
               ip_protocol: IPV4
               direction: "IN_OUT"
               logged: true
+              disabled: true
               scope: 
                 - "/infra/domains/default/groups/web-group"
             - action: "ALLOW"
-              id: 3056
+            #  id: 3056
               sequence_number: 110
               display_name: "All to Web"
               source_groups: "ANY"
@@ -40,10 +41,11 @@
               ip_protocol: IPV4
               direction: "IN_OUT"
               logged: true
+              disabled: true
               scope: 
                 - "/infra/domains/default/groups/web-group"
             - action: "ALLOW"
-              id: 3054
+            #  id: 3054
               sequence_number: 120
               display_name: "Web to App"
               source_groups: ["/infra/domains/default/groups/web-group"]
@@ -52,6 +54,7 @@
               ip_protocol: IPV4
               direction: "IN_OUT"
               logged: true
+              disabled: true
               scope: 
                 - "/infra/domains/default/groups/app-group"
                 - "/infra/domains/default/groups/web-group"
@@ -69,7 +72,7 @@
 #             - "/infra/domains/default/groups/app-group"
 #             - "/infra/domains/default/groups/db-group"
             - action: "DROP"
-              id: 3057
+            #  id: 3057
               sequence_number: 140
               display_name: "Block All"
               source_groups: "ANY"
@@ -79,6 +82,7 @@
               ip_protocol: IPV4
               direction: "IN_OUT"
               logged: true
+              disabled: true
               scope: 
                 - "/infra/domains/default/groups/app-group"
                 - "/infra/domains/default/groups/db-group"
