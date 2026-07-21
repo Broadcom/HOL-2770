@@ -3,6 +3,8 @@
     connection: local
     vars_files:
       - environment.yml
+    collections:
+      - vmware.ansible_for_nsxt
     tasks:
       - name: Deploy 3 tier App Policy
         nsxt_policy_security_policy:
