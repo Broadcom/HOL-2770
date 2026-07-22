@@ -53,7 +53,7 @@
       destination_groups: 
       - "/infra/domains/default/groups/app-group"
       services: 
-      - "/infra/services/HTTP-8080"
+      - "/infra/services/http_8080"
       ip_protocol: IPV4
       direction: "IN_OUT"
       logged: true
