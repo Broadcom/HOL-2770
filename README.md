@@ -9,15 +9,6 @@
 \_| |_/\__,_|_| |_|\__,_||___/ \___/|_| |_| \_____/\__,_||_.__/|___/
 ```
 
-## REMOVE THIS BLOCK BEFORE PUBLISHING
-
-THIS IS AN EXAMPLE. REPLACE THIS WITH YOUR OWN README.md using the pattern below.
-
-This is customer facing so please make it look professional. Thanks.
-
-This file can be updated and will be copied to the console desktop at startup.
-
-> **NOTE:** this file is public so NEVER include passwords. The official HOL Password is stored in the PASSWORD.txt that is copied to the console at boot.
 
 ## Lab Details
 
@@ -42,9 +33,15 @@ More detail about your lab: Products/Features covered in this lab.
 
 The current build is using a pre-beta version of Security Services Platform 5.2
 
-## Modules
+## Labs
 
-Please record account names for this lab. All acccounts use the standard Hands-on Labs password.
+This lab will cover 5 differnt topics in 5 different manuals
+
+* Security Journey - Leverage the Security Journey workflow to tag, group, and implement policies for a simulated data center
+* Advanced Threat Prevention - Leverage IDPS, NTA, NRD, and MPS to defend against different threat vectors
+* Secure VCF Infrastructure - Use Distributed and Gateway firewalls to proivde a complete security model for VCF Infrastructure
+* vDefend Operations - Leverage SSP and NSX dashboards to operationalize vDefend
+* vDefend Firewall Deep Dive - Manually configure security L4 through L7 security policies for a 3-Tier application.
 
 ### === Module 1 ===
 
