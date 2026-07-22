@@ -5,6 +5,7 @@
     hostname: "{{ nsxt_wld01_hostname }}"
     username: "{{ nsxt_wld01_username }}"
     password: "{{ nsxt_wld01_password }}"
+    mgr_type: "local"
     validate_certs: False
     display_name: "web-group"
     state: "present"
@@ -21,6 +22,7 @@
     hostname: "{{ nsxt_wld01_hostname }}"
     username: "{{ nsxt_wld01_username }}"
     password: "{{ nsxt_wld01_password }}"
+    mgr_type: "local"
     validate_certs: False
     display_name: "app-group"
     state: "present"
@@ -37,6 +39,7 @@
     hostname: "{{ nsxt_wld01_hostname }}"
     username: "{{ nsxt_wld01_username }}"
     password: "{{ nsxt_wld01_password }}"
+    mgr_type: "local"
     validate_certs: False
     display_name: "db-group"
     state: "present"

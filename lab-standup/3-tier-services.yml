@@ -5,6 +5,7 @@
     hostname: "{{ nsxt_wld01_hostname }}"
     username: "{{ nsxt_wld01_username }}"
     password: "{{ nsxt_wld01_password }}"
+    mgr_type: "local"
     validate_certs: false
     display_name: "HTTP-8080"
     state: "present"
