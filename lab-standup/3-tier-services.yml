@@ -15,6 +15,6 @@
       l4_protocol: TCP
       destination_ports:
       - '8080'
-    id: "http_8080"
+    id: "HTTP-8080"
     description: "Tomcat 8080 HTTP port"
 
