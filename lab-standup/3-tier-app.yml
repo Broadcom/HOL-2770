@@ -1,90 +1,83 @@
 ---
-  - hosts: 127.0.0.1
-    connection: local
-    vars_files:
-      - environment.yml
-    collections:
-      - vmware.ansible_for_nsxt
-    tasks:
-      - name: Deploy 3 tier App Policy
-        nsxt_policy_security_policy:
-          hostname: "{{ nsxt_wld01_hostname }}"
-          username: "{{ nsxt_wld01_username }}"
-          password: "{{ nsxt_wld01_password }}"
-          validate_certs: False
-          id: 3_Tier_App
-          display_name: "3 Tier App"
-          state: "present"
-          domain_id: "default"
-          category: "Application"
-          rules:
-            - action: "DROP"
-              id: 3058
-              sequence_number: 100
-              display_name: "Block Web to Web"
-              source_groups: ["/infra/domains/default/groups/web-group"]
-              destination_groups: ["/infra/domains/default/groups/web-group"]
-              services: ["/infra/services/HTTPS"]
-              ip_protocol: IPV4
-              direction: "IN_OUT"
-              logged: true
-              disabled: true
-              scope: 
-                - "/infra/domains/default/groups/web-group"
-            - action: "ALLOW"
-              id: 3056
-              sequence_number: 110
-              display_name: "All to Web"
-              source_groups: "ANY"
-              destination_groups: ["/infra/domains/default/groups/web-group"]
-              services: ["/infra/services/HTTPS"]
-              ip_protocol: IPV4
-              direction: "IN_OUT"
-              logged: true
-              disabled: true
-              scope: 
-                - "/infra/domains/default/groups/web-group"
-            - action: "ALLOW"
-              id: 3054
-              sequence_number: 120
-              display_name: "Web to App"
-              source_groups: ["/infra/domains/default/groups/web-group"]
-              destination_groups: ["/infra/domains/default/groups/app-group"]
-              services: ["/infra/services/HTTP-8080"]
-              ip_protocol: IPV4
-              direction: "IN_OUT"
-              logged: true
-              disabled: true
-              scope: 
-                - "/infra/domains/default/groups/app-group"
-                - "/infra/domains/default/groups/web-group"
-#           - action: "ALLOW"
-#             id: 3055
-#             sequence_number: 130
-#             display_name: "app to db"
-#             source_groups: ["/infra/domains/default/groups/app-group"]
-#             destination_groups: ["/infra/domains/default/groups/db-group"]
-#             services: ["/infra/services/MySQL"]
-#             ip_protocol: IPV4
-#             direction: "IN_OUT"
-#             logged: true
-#             scope: 
-#             - "/infra/domains/default/groups/app-group"
-#             - "/infra/domains/default/groups/db-group"
-            - action: "DROP"
-              id: 3057
-              sequence_number: 140
-              display_name: "Block All"
-              source_groups: "ANY"
-              destination_groups: "ANY"
-              direction: "IN_OUT"
-              services: "ANY"
-              ip_protocol: IPV4
-              direction: "IN_OUT"
-              logged: true
-              disabled: true
-              scope: 
-                - "/infra/domains/default/groups/app-group"
-                - "/infra/domains/default/groups/db-group"
-                - "/infra/domains/default/groups/web-group"
-        delegate_to: localhost
+- name: Deploy 3 tier App Policy
+  nsxt_policy_security_policy:
+    hostname: "{{ nsxt_wld01_hostname }}"
+    username: "{{ nsxt_wld01_username }}"
+    password: "{{ nsxt_wld01_password }}"
+    validate_certs: False
+    id: 3_Tier_App
+    display_name: "3 Tier App"
+    state: "present"
+    domain_id: "default"
+    category: "Application"
+    rules:
+      - action: "DROP"
+        id: 3058
+        sequence_number: 100
+        display_name: "Block Web to Web"
+        source_groups: ["/infra/domains/default/groups/web-group"]
+        destination_groups: ["/infra/domains/default/groups/web-group"]
+        services: ["/infra/services/HTTPS"]
+        ip_protocol: IPV4
+        direction: "IN_OUT"
+        logged: true
+        disabled: true
+        scope: 
+          - "/infra/domains/default/groups/web-group"
+      - action: "ALLOW"
+        id: 3056
+        sequence_number: 110
+        display_name: "All to Web"
+        source_groups: "ANY"
+        destination_groups: ["/infra/domains/default/groups/web-group"]
+        services: ["/infra/services/HTTPS"]
+        ip_protocol: IPV4
+        direction: "IN_OUT"
+        logged: true
+        disabled: true
+        scope: 
+          - "/infra/domains/default/groups/web-group"
+      - action: "ALLOW"
+        id: 3054
+        sequence_number: 120
+        display_name: "Web to App"
+        source_groups: ["/infra/domains/default/groups/web-group"]
+        destination_groups: ["/infra/domains/default/groups/app-group"]
+        services: ["/infra/services/HTTP-8080"]
+        ip_protocol: IPV4
+        direction: "IN_OUT"
+        logged: true
+        disabled: true
+        scope: 
+          - "/infra/domains/default/groups/app-group"
+          - "/infra/domains/default/groups/web-group"
+      #- action: "ALLOW"
+      #  id: 3055
+      #  sequence_number: 130
+      #  display_name: "app to db"
+      #  source_groups: ["/infra/domains/default/groups/app-group"]
+      #  destination_groups: ["/infra/domains/default/groups/db-group"]
+      #  services: ["/infra/services/MySQL"]
+      #  ip_protocol: IPV4
+      #  direction: "IN_OUT"
+      #  logged: true
+      #  scope: 
+      #  - "/infra/domains/default/groups/app-group"
+      #  - "/infra/domains/default/groups/db-group"
+      - action: "DROP"
+        id: 3057
+        sequence_number: 140
+        display_name: "Block All"
+        source_groups: "ANY"
+        destination_groups: "ANY"
+        direction: "IN_OUT"
+        services: "ANY"
+        ip_protocol: IPV4
+        direction: "IN_OUT"
+        logged: true
+        disabled: true
+        scope: 
+          - "/infra/domains/default/groups/app-group"
+          - "/infra/domains/default/groups/db-group"
+          - "/infra/domains/default/groups/web-group"
+  delegate_to: localhost
