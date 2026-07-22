@@ -38,7 +38,7 @@
     username: "{{ nsxt_wld01_username }}"
     password: "{{ nsxt_wld01_password }}"
     validate_certs: False
-    display_name: db-group"
+    display_name: "db-group"
     state: "present"
     domain_id: "default"
     expression:
