@@ -322,7 +322,7 @@ sec_groups:
   expression:
   - resource_type: IPAddressExpression
     ip_addresses:
-    - <Instance IP>
+    - 1.1.1.1
   domain_id: default
   id: SG_W01_SUP
   description: Security Group consisting of all W01 Supervisor Management Ips
