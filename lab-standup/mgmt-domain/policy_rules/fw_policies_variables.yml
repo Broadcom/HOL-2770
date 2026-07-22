@@ -19,7 +19,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 10
     display_name: VCF Fleet to NTP Servers
     id: VCF_Fleet_to_NTP_Servers
@@ -34,7 +34,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 20
     display_name: VCF Fleet to DHCP Servers
     id: VCF_Fleet_to_DHCP_Servers
@@ -49,7 +49,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 30
     display_name: VCF Fleet to Active Directory
     id: VCF_Fleet_to_Active_Directory
@@ -64,7 +64,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 40
     display_name: Active Directory to VCF Fleet
     id: Active_Directory_to_VCF_Fleet
@@ -79,7 +79,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 70
     display_name: VCF Fleet to LOGS
     id: VCF_Fleet_to_LOGS
@@ -95,7 +95,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 80
     display_name: VCF Fleet Lockdown
     id: VCF_Fleet_Lockdown
@@ -114,7 +114,7 @@ Firewall:
     logged: true
     scope:
     - ANY
-    disabled: false
+    disabled: true
   category: Infrastructure
   scope:
   - /infra/domains/default/groups/VCF_FLEET
@@ -138,7 +138,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 10
     display_name: TOOLS to VCF Fleet
     id: TOOLS_to_VCF_Fleet
@@ -154,7 +154,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 20
     display_name: Any to VCF Automation
     id: Any_to_VCF_Automation
@@ -169,7 +169,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 30
     display_name: VCF Fleet to Backup Servers
     id: VCF_Fleet_to_Backup_Servers
@@ -184,7 +184,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 40
     display_name: Backup Servers to VCF Fleet
     id: Backup_Servers_to_VCF_Fleet
@@ -199,7 +199,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 50
     display_name: VCF Fleet to SMTP Servers
     id: VCF_Fleet_to_SMTP_Servers
@@ -215,7 +215,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 60
     display_name: VCF Fleet Internet Access
     id: VCF_Fleet_Internet_Access
@@ -232,7 +232,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   category: Environment
   scope:
   - /infra/domains/default/groups/VCF_FLEET
@@ -256,7 +256,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 10
     display_name: VCF Fleet Management to VCF WLDs
     id: VCF_Fleet_Management_to_VCF_WLDs
@@ -272,7 +272,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 20
     display_name: VCF SDDC to VCF WLDs
     id: VCF_SDDC_to_VCF_WLDs
@@ -288,7 +288,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 30
     display_name: VCF Cloud Proxy  to VCF WLDs
     id: VCF_Cloud_Proxy__to_VCF_WLDs
@@ -305,7 +305,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 30
     display_name: VCF WLDs to Fleet MGMT Services
     id: VCF_WLDs_to_Fleet_MGMT_Services
@@ -321,7 +321,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 40
     display_name: VCF WLDs to OPS NET Collectors
     id: VCF_WLDs_to_OPS_NET_Collectors
@@ -337,7 +337,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 50
     display_name: WLD Supervisors to OPS Cloud Proxy
     id: WLD_Supervisors_to_OPS_Cloud_Proxy
@@ -352,7 +352,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 60
     display_name: WLD Supervisors to VCF Automation
     id: WLD_Supervisors_to_VCF_Automation
@@ -367,7 +367,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 70
     display_name: VCF Automation to VCF Supervisor
     id: VCF_Automation_to_VCF_Supervisor
@@ -382,7 +382,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 70
     display_name: VCF License Hub  to WLDs
     id: VCF_License_Hub__to_WLDs
@@ -398,7 +398,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 70
     display_name: vDefend License Hub  to WLDs
     id: vDefend_License_Hub__to_WLDs
@@ -414,7 +414,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 80
     display_name: VCF Fleet Management Lockdown
     id: VCF_Fleet_Management_Lockdown
@@ -429,7 +429,7 @@ Firewall:
     logged: true
     scope:
     - ANY
-    disabled: false
+    disabled: true
   category: Environment
   scope:
   - /infra/domains/default/groups/VCF_FLEET
@@ -453,7 +453,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 10
     display_name: VCF Fleet Management to VCF MGMT WLD
     id: VCF_Fleet_Management_to_VCF_MGMT_WLD
@@ -468,7 +468,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 20
     display_name: VCF SDDC to VCF MGMT WLD
     id: VCF_SDDC_to_VCF_MGMT_WLD
@@ -483,7 +483,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 30
     display_name: VCF Cloud Proxy  to VCF FM WLD
     id: VCF_Cloud_Proxy__to_VCF_FM_WLD
@@ -500,7 +500,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 30
     display_name: VCF WLDs to Fleet MGMT Services
     id: VCF_WLDs_to_Fleet_MGMT_Services
@@ -515,7 +515,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 40
     display_name: 'VCF MGMT WLD to OPS NET Collectors  '
     id: VCF_MGMT_WLD_to_OPS_NET_Collectors__
@@ -530,7 +530,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 70
     display_name: License Hub  to VCF WLDs
     id: License_Hub__to_VCF_WLDs
@@ -546,7 +546,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 70
     display_name: vDefend License Hub  to MGMT WLD
     id: vDefend_License_Hub__to_MGMT_WLD
@@ -561,7 +561,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 50
     display_name: VCF Management Lockdown
     id: VCF_Management_Lockdown
@@ -576,7 +576,7 @@ Firewall:
     logged: true
     scope:
     - ANY
-    disabled: false
+    disabled: true
   category: Environment
   scope:
   - /infra/domains/default/groups/M01
@@ -600,7 +600,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 10
     display_name: VCF Fleet Management to VCF WLD 01
     id: VCF_Fleet_Management_to_VCF_WLD_01
@@ -615,7 +615,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 20
     display_name: VCF SDDC to VCF WLD 01
     id: VCF_SDDC_to_VCF_WLD_01
@@ -630,7 +630,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 30
     display_name: VCF Cloud Proxy  to VCF FM WLD
     id: VCF_Cloud_Proxy__to_VCF_FM_WLD
@@ -647,7 +647,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 30
     display_name: VCF WLDs to Fleet MGMT Services
     id: VCF_WLDs_to_Fleet_MGMT_Services
@@ -662,7 +662,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 40
     display_name: 'VCF WLD 01 to OPS NET Collectors  '
     id: VCF_WLD_01_to_OPS_NET_Collectors__
@@ -677,7 +677,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 70
     display_name: License Hub  to WLD W01
     id: License_Hub__to_WLD_W01
@@ -693,7 +693,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 70
     display_name: vDefend License Hub  toWLD W01
     id: vDefend_License_Hub__toWLD_W01
@@ -708,7 +708,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 50
     display_name: VCF WLD 01 Lockdown
     id: VCF_WLD_01_Lockdown
@@ -723,7 +723,7 @@ Firewall:
     logged: true
     scope:
     - ANY
-    disabled: false
+    disabled: true
   category: Environment
   scope:
   - /infra/domains/default/groups/W01
@@ -753,7 +753,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 10
     display_name: SG_FLEET_OPS to FLEET OPS
     id: SG_FLEET_OPS_to_FLEET_OPS
@@ -771,7 +771,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 20
     display_name: SG_FLEET_OPS_LOGS to SG_FLEET_OPS
     id: SG_FLEET_OPS_LOGS_to_SG_FLEET_OPS
@@ -786,7 +786,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 30
     display_name: Fleet Managers to FLEET Automation
     id: Fleet_Managers_to_FLEET_Automation
@@ -801,7 +801,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 40
     display_name: VFLEET OPS NET to FLEET OPS NET
     id: VFLEET_OPS_NET_to_FLEET_OPS_NET
@@ -816,7 +816,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 50
     display_name: FLEET OPS NET Collectors to FLEET OPS NET
     id: FLEET_OPS_NET_Collectors_to_FLEET_OPS_NET
@@ -831,7 +831,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 60
     display_name: FLEET Fleet Managers to FLEET Automation
     id: FLEET_Fleet_Managers_to_FLEET_Automation
@@ -846,7 +846,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 70
     display_name: FLEET Automation to FLEET Automation
     id: FLEET_Automation_to_FLEET_Automation
@@ -861,7 +861,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 80
     display_name: FLEET Lockdown
     id: FLEET_Lockdown
@@ -876,7 +876,7 @@ Firewall:
     logged: true
     scope:
     - ANY
-    disabled: false
+    disabled: true
   category: Application
   scope:
   - /infra/domains/default/groups/VCF_FLEET
@@ -900,7 +900,7 @@ Firewall:
     logged: true
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 10
     display_name: MGMT Domain vCenter to MGMT Domain
     id: MGMT_Domain_vCenter_to_MGMT_Domain
@@ -918,7 +918,7 @@ Firewall:
     logged: true
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 20
     display_name: MGMT Domain ESXi to MGMT Domain
     id: MGMT_Domain_ESXi_to_MGMT_Domain
@@ -935,7 +935,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 30
     display_name: MGMT Domain NSX to MGMT Domain
     id: MGMT_Domain_NSX_to_MGMT_Domain
@@ -952,7 +952,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 40
     display_name: MGMT Domain SSPI to MGMT Domain
     id: MGMT_Domain_SSPI_to_MGMT_Domain
@@ -968,7 +968,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 50
     display_name: MGMT Domain AVI Controller to MGMT Domain
     id: MGMT_Domain_AVI_Controller_to_MGMT_Domain
@@ -987,7 +987,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 60
     display_name: MGMT Domain SUP to NSX and vCenter
     id: MGMT_Domain_SUP_to_NSX_and_vCenter
@@ -1003,7 +1003,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 40
     display_name: MGMT vSphere to MGMT SSPM
     id: MGMT_vSphere_to_MGMT_SSPM
@@ -1020,7 +1020,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 70
     display_name: MGMT Domain SSP to MGMT Domain
     id: MGMT_Domain_SSP_to_MGMT_Domain
@@ -1035,7 +1035,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 90
     display_name: MGMT Domain SSP to MGMT Domain SSP
     id: MGMT_Domain_SSP_to_MGMT_Domain_SSP
@@ -1050,7 +1050,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 100
     display_name: MGMT Domain Lockdown
     id: MGMT_Domain_Lockdown
@@ -1065,7 +1065,7 @@ Firewall:
     logged: true
     scope:
     - ANY
-    disabled: false
+    disabled: true
   category: Application
   scope:
   - /infra/domains/default/groups/M01
@@ -1089,7 +1089,7 @@ Firewall:
     logged: true
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 10
     display_name: WLD W01 vCenter to WLD W01
     id: WLD_W01_vCenter_to_WLD_W01
@@ -1107,7 +1107,7 @@ Firewall:
     logged: true
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 20
     display_name: WLD W01 ESXi to WLD W01
     id: WLD_W01_ESXi_to_WLD_W01
@@ -1124,7 +1124,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 30
     display_name: WLD W01 NSX to WLD W01
     id: WLD_W01_NSX_to_WLD_W01
@@ -1141,7 +1141,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 40
     display_name: WLD W01 SSPI to WLD W01
     id: WLD_W01_SSPI_to_WLD_W01
@@ -1157,7 +1157,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 50
     display_name: WLD W01 AVI Controller to WLD W01
     id: WLD_W01_AVI_Controller_to_WLD_W01
@@ -1176,7 +1176,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 60
     display_name: WLD W01 vSphere to WLD W01 vSphere
     id: WLD_W01_vSphere_to_WLD_W01_vSphere
@@ -1197,7 +1197,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 70
     display_name: WLD W01 SUP to NSX and vCenter
     id: WLD_W01_SUP_to_NSX_and_vCenter
@@ -1213,7 +1213,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 80
     display_name: WLD W01 vSphere to WLD W01 SSPM
     id: WLD_W01_vSphere_to_WLD_W01_SSPM
@@ -1230,7 +1230,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 90
     display_name: WLD W01 SSP to WLD W01
     id: WLD_W01_SSP_to_WLD_W01
@@ -1245,7 +1245,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 100
     display_name: WLD W01 SSP to WLD W01 SSP
     id: WLD_W01_SSP_to_WLD_W01_SSP
@@ -1260,7 +1260,7 @@ Firewall:
     logged: false
     scope:
     - ANY
-    disabled: false
+    disabled: true
   - sequence_number: 110
     display_name: WLD W01 Lockdown
     id: WLD_W01_Lockdown
@@ -1275,7 +1275,7 @@ Firewall:
     logged: true
     scope:
     - ANY
-    disabled: false
+    disabled: true
   category: Application
   scope:
   - /infra/domains/default/groups/W01
