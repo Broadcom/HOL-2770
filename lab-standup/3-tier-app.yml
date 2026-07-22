@@ -82,7 +82,6 @@
           - "ANY"
         destination_groups: 
           - "ANY"
-        direction: "IN_OUT"
         services: 
           - "ANY"
         ip_protocol: IPV4
