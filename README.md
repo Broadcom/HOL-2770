@@ -29,18 +29,18 @@ This file can be updated and will be copied to the console desktop at startup.
 
 ###  Primary benefits of your lab
 
-Provide information about the lab here
+This is the primary lab for VMware vDefend focusing on distributed firewall capabilities and Security Services Platform features.
 
 ### Featured Product(s)
 
 More detail about your lab: Products/Features covered in this lab.
 
-* Product 1
-* Product 2
-* Feature 1
-* Feature 2
+* VMware vDefend Distributed Firewall
+* VMware vDefend Gateway Firewall
+* Security Inteligence
+* VMware vDefend Advanced Threat Prevention
 
-Additional notes and "interesting" facts about your lab. (pre-release code, simulated data, etc.)
+The current build is using a pre-beta version of Security Services Platform 5.2
 
 ## Modules
 
