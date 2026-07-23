@@ -336,7 +336,8 @@ sec_groups:
     - /infra/domains/default/groups/SG_FLEET_OPSNET
     - /infra/domains/default/groups/SG_FLEET_OPSNET_COL
     - /infra/domains/default/groups/SG_FLEET_VCFA
-    - /infra/domains/default/groups/SG_FLEET_LICENSE
+    - /infra/domains/default/groups/SG_FLEET_LIC_SER
+    - /infra/domains/default/groups/SG_FLEET_LIC_HUB
   - conjunction_operator: OR
     resource_type: ConjunctionOperator
   - key: Name
