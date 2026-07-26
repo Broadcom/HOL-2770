@@ -14,7 +14,7 @@
 
 ```plain
 * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - *
-*                       HOL-2770                  *
+*                                      HOL-2770                                 *
 * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - *
 ```
 
@@ -31,7 +31,16 @@ More detail about your lab: Products/Features covered in this lab.
 * Security Inteligence
 * VMware vDefend Advanced Threat Prevention
 
-The current build is using a pre-beta version of Security Services Platform 5.2
+The current build is using pre-release code of Security Services Platform 5.2
+
+## Lab Credentials
+
+The password for all appliances and applications can be found in the passwords.txt file on the desktop.
+
+Unless specified below the username will be admin
+
+* vc-mgmt: administrator@vsphere.local
+* vc-wld01-a: administrator@wld.sso
 
 ## Labs
 
@@ -43,28 +52,43 @@ This lab will cover 5 differnt topics in 5 different manuals
 * vDefend Operations - Leverage SSP and NSX dashboards to operationalize vDefend
 * vDefend Firewall Deep Dive - Manually configure security L4 through L7 security policies for a 3-Tier application.
 
-### === Module 1 ===
+### === HOL-2770-01: Getting Started with vDefend Firewall – Taking the Security Journey ===
 
-Credentials for all vCenter Operations Manager Instances:
-User name: admin
+This lab will take the user through the Security Journey. A prescriptive 4 stage workflow that helps infrastructure security administrators systematically strengthen their datacenter segmentation towards zero trust deployment using VMware vDefend Distributed Firewall and Security Intelligence.
 
-For vCenter Server Administration Console:
-User name: root
 
-For the vSphere Client, use:
-User name: administrator@vsphere.local
+### === HOL-2770-02: Multi-layer Defense against AI-driven Cyberattacks with vDefend ===
 
-### === Module 2 ===
+This lab will take the ues throug the Advanced Threat Prevention capabilities of defend to learn how to leverage vDefend ATP to defend against AI-driven cyberattacks. The user will learn how to leverage Virtual Patching to protect against known/disclosed vulnerabilites in workloads running in the virtual evironment, and NTA/NDR to defend against zero day threats.
 
-big long command line that nobody wants to type
+### === HOL-2770-03: Secure VCF Infrastructure with VMware vDefend Firewall ===
 
-## Lab Authors
+This lab will take the user through the best practices to secure their VCF environmement with vDefend. The user will enable predefined security policies and understand how these policies protect their environment. 
+
+### === HOL-2770-04: Operationalizing vDefend Firewall ===
+
+This lab will take the user through all the available tool within vDefend and VCF to help operationalize their vDefend deployment.
+
+### === HOL-2770-05: VMware vDefend Firewall Technology Deep Dive ===
+
+This lab will take the user on a deepdive on how to manually configure, tags, groups, policies, and firewall rules for a 3-tier application. They will then learn how to layer additional levels of security such as L7 distributed firewall rules.
+
+## 2027 Group 4 Team
 
 ### Principal
 
-* Principal Name:
+* Frank Snyder
+* Nick Robbins
 
-### Captain(s)
+### Captains
 
-* Captain:
-* Captain:
+* Lead: Quinton Coehlo 
+* Lynne Dark
+* Josh Newton
+
+### Associate Captains
+* Al Granville
+* Bhavik Metha
+* Britton Johnson
+* Apoorv Malmane
+* Ted Romer
