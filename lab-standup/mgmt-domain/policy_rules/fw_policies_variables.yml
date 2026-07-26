@@ -117,7 +117,7 @@ Firewall:
     disabled: true
   category: Infrastructure
   scope:
-  - /infra/domains/default/groups/VCF_FLEET
+  - /infra/domains/default/groups/SG_VCF_FLEET
   description: Firewall Section for VCF Fleet Infrastructure Services Access
   domain_id: default
   id: VCF_Fleet_
@@ -235,7 +235,7 @@ Firewall:
     disabled: true
   category: Environment
   scope:
-  - /infra/domains/default/groups/VCF_FLEET
+  - /infra/domains/default/groups/SG_VCF_FLEET
   description: Firewall Section for VCF Fleet Environment Services Access
   domain_id: default
   id: VCF_Fleet_Environment
@@ -432,7 +432,7 @@ Firewall:
     disabled: true
   category: Environment
   scope:
-  - /infra/domains/default/groups/VCF_FLEET
+  - /infra/domains/default/groups/SG_VCF_FLEET
   description: Firewall Section for VCF Fleet Management Services Access
   domain_id: default
   id: VCF_Fleet_Management
@@ -579,7 +579,7 @@ Firewall:
     disabled: true
   category: Environment
   scope:
-  - /infra/domains/default/groups/M01
+  - /infra/domains/default/groups/SG_M01
   description: Firewall Section for VCF Management Domain Services Access
   domain_id: default
   id: VCF_Management_Domain
@@ -726,7 +726,7 @@ Firewall:
     disabled: true
   category: Environment
   scope:
-  - /infra/domains/default/groups/W01
+  - /infra/domains/default/groups/SG_W01
   description: Firewall Section for VCF WLD W01 Services Access
   domain_id: default
   id: VCF_WLD_W01
@@ -879,7 +879,7 @@ Firewall:
     disabled: true
   category: Application
   scope:
-  - /infra/domains/default/groups/VCF_FLEET
+  - /infra/domains/default/groups/SG_VCF_FLEET
   description: Firewall Section for VCF Operations Suite Services Access
   domain_id: default
   id: VCF_Operations
@@ -891,9 +891,9 @@ Firewall:
     id: VCF_vCenter_RDU
     description: VCF vCenter Reduce Downtime Upgrade
     source_groups:
-    - /infra/domains/default/groups/VCF01_MGMT
+    - /infra/domains/default/groups/SG_VCF_MGMT
     destination_groups:
-    - /infra/domains/default/groups/VCF01_MGMT
+    - /infra/domains/default/groups/SG_VCF_MGMT
     services:
     - /infra/services/vCenter_RDU
     action: ALLOW
@@ -1068,7 +1068,7 @@ Firewall:
     disabled: true
   category: Application
   scope:
-  - /infra/domains/default/groups/M01
+  - /infra/domains/default/groups/SG_M01
   description: Firewall Section for Management Domain Services Access
   domain_id: default
   id: Management_Domain
@@ -1080,9 +1080,9 @@ Firewall:
     id: VCF_vCenter_RDU
     description: VCF vCenter Reduce Downtime Upgrade
     source_groups:
-    - /infra/domains/default/groups/VCF01_MGMT
+    - /infra/domains/default/groups/SG_VCF_MGMT
     destination_groups:
-    - /infra/domains/default/groups/VCF01_MGMT
+    - /infra/domains/default/groups/SG_VCF_MGMT
     services:
     - /infra/services/vCenter_RDU
     action: ALLOW
@@ -1278,7 +1278,7 @@ Firewall:
     disabled: true
   category: Application
   scope:
-  - /infra/domains/default/groups/W01
+  - /infra/domains/default/groups/SG_W01
   description: Firewall Section for WLD01 Services Access
   domain_id: default
   id: WLD_W01
