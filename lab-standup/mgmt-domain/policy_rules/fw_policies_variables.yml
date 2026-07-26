@@ -1,5 +1,5 @@
 Firewall:
-- display_name: 'VCF Fleet '
+- display_name: VCF Fleet
   sequence_number: 0
   rules:
   - sequence_number: 0
@@ -120,7 +120,7 @@ Firewall:
   - /infra/domains/default/groups/SG_VCF_FLEET
   description: Firewall Section for VCF Fleet Infrastructure Services Access
   domain_id: default
-  id: VCF_Fleet_
+  id: VCF_Fleet
 - display_name: VCF Fleet Environment
   sequence_number: 10
   rules:
