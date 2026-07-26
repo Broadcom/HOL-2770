@@ -1,6 +1,6 @@
 ---
 # ══════════════════════════════════════════════════════════════════════════════
-# SSP Ansible Deployment — variable template
+# SSP Ansible Deployment — HOL-2770
 #
 # Copy this file to group_vars/all.yml and fill in your environment values.
 # For production use, store sensitive values (passwords, certificates) using
