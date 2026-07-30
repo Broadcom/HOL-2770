@@ -12,6 +12,11 @@
 . /home/holuser/.bashrc
 # Insert your custom code here:
 
+FTorPROD="/tmp/deploymentpool.txt"
+
+if [ -f "$FTorPROD"]; then
+    ansible-playbook /vpodrep/2027-labs/2770/lab-standup/lab-build.yml
+fi
 
 # Example to echo text into file on Console VM. 
 # NOTE: when this script runs, /lmchol is mounted to the "/" of the Console VM
