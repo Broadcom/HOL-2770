@@ -15,8 +15,8 @@
 FTorPROD="/tmp/deploymentpool.txt"
 
 if [ -f "$FTorPROD" ]; then
-    ansible-galaxy collection install /vpodrep/2027-labs/2770/lab-standup/ansible/vmware-ansible_for_vdefend-1.0.1.tar.gz
-    ansible-playbook /vpodrep/2027-labs/2770/lab-standup/lab-build.yml
+    ansible-galaxy collection install /vpodrepo/2027-labs/2770/lab-standup/ansible/vmware-ansible_for_vdefend-1.0.1.tar.gz
+    ansible-playbook /vpodrepo/2027-labs/2770/lab-standup/lab-build.yml
 fi
 
 # Example to echo text into file on Console VM. 
