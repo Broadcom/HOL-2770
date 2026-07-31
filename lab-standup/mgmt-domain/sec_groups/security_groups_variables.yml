@@ -3,7 +3,7 @@ sec_groups:
   expression:
   - resource_type: PathExpression
     paths:
-    - /infra/segments/945c23fa-06b2-48d4-bbf8-54f819f1a228:dvportgroup-23
+    - /infra/segments/945c23fa-06b2-48d4-bbf8-54f819f1a228:dvportgroup-25
   domain_id: default
   id: SG_VCF_MGMT
   description: Security Group consisting of VCF MGMT Segment
