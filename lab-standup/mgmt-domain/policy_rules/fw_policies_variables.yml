@@ -796,7 +796,7 @@ Firewall:
     destination_groups:
     - /infra/domains/default/groups/SG_FLEET_VCFA
     services:
-    - /infra/services/SG_FLEET_MGMT_Services
+    - /infra/services/VCF_FM_Services
     action: ALLOW
     logged: false
     scope:
@@ -841,7 +841,7 @@ Firewall:
     destination_groups:
     - /infra/domains/default/groups/SG_FLEET_VCFA
     services:
-    - /infra/services/SG_FLEET_MGMT_Services
+    - /infra/services/VCF_FM_Services
     action: ALLOW
     logged: false
     scope:
