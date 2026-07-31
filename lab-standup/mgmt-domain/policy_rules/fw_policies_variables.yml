@@ -764,7 +764,7 @@ Firewall:
     - /infra/domains/default/groups/SG_FLEET_VCFA
     - /infra/domains/default/groups/SG_FLEET_MSVC
     - /infra/domains/default/groups/SG_FLEET_OPSNET
-    - /infra/domains/default/groups/SG_FLEET_VCFA
+    #- /infra/domains/default/groups/SG_FLEET_VCFA
     services:
     - /infra/services/HTTPS
     action: ALLOW
