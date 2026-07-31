@@ -763,8 +763,8 @@ Firewall:
     destination_groups:
     - /infra/domains/default/groups/SG_FLEET_VCFA
     - /infra/domains/default/groups/SG_FLEET_MSVC
-    - /infra/domains/default/groups/SG_FLEET_OPS_NET
-    - /infra/domains/default/groups/SG_FLEET_VCFA
+    - /infra/domains/default/groups/SG_FLEET_OPSNET
+    #- /infra/domains/default/groups/SG_FLEET_VCFA
     services:
     - /infra/services/HTTPS
     action: ALLOW
@@ -773,9 +773,9 @@ Firewall:
     - ANY
     disabled: true
   - sequence_number: 20
-    display_name: SG FLEET MSVC to FLEET OPS
+    display_name: FLEET MSVC to FLEET OPS
     id: SG_FLEET_MSVC_to_SG_FLEET_OPS
-    description: SG FLEET MSVC to FLEET OPS
+    description: FLEET MSVC to FLEET OPS
     source_groups:
     - /infra/domains/default/groups/SG_FLEET_MSVC
     destination_groups:
@@ -796,7 +796,7 @@ Firewall:
     destination_groups:
     - /infra/domains/default/groups/SG_FLEET_VCFA
     services:
-    - /infra/services/SG_FLEET_MGMT_Services
+    - /infra/services/VCF_FM_Services
     action: ALLOW
     logged: false
     scope:
@@ -807,9 +807,9 @@ Firewall:
     id: VFLEET_OPS_NET_to_FLEET_OPS_NET
     description: VFLEET OPS NET to FLEET OPS NET
     source_groups:
-    - /infra/domains/default/groups/SG_FLEET_OPS_NET
+    - /infra/domains/default/groups/SG_FLEET_OPSNET
     destination_groups:
-    - /infra/domains/default/groups/SG_FLEET_OPS_NET
+    - /infra/domains/default/groups/SG_FLEET_OPSNET
     services:
     - ANY
     action: ALLOW
@@ -818,13 +818,13 @@ Firewall:
     - ANY
     disabled: true
   - sequence_number: 50
-    display_name: FLEET OPS NET Collectors to FLEET OPS NET
+    display_name: FLEET OPSNET Collectors to FLEET OPSNET
     id: FLEET_OPS_NET_Collectors_to_FLEET_OPS_NET
-    description: FLEET OPS NET Collectors to FLEET OPS NET
+    description: FLEET OPSNET Collectors to FLEET OPSNET
     source_groups:
     - /infra/domains/default/groups/SG_FLEET_OPSNET_COL
     destination_groups:
-    - /infra/domains/default/groups/SG_FLEET_OPS_NET
+    - /infra/domains/default/groups/SG_FLEET_OPSNET
     services:
     - /infra/services/HTTPS
     action: ALLOW
@@ -841,7 +841,7 @@ Firewall:
     destination_groups:
     - /infra/domains/default/groups/SG_FLEET_VCFA
     services:
-    - /infra/services/SG_FLEET_MGMT_Services
+    - /infra/services/VCF_FM_Services
     action: ALLOW
     logged: false
     scope:
@@ -979,7 +979,7 @@ Firewall:
     - /infra/domains/default/groups/SG_M01_VC
     - /infra/domains/default/groups/SG_M01_NSX
     - /infra/domains/default/groups/SG_M01_AVI
-    - /infra/domains/default/groups/SG_M01_AVI_SE
+    - /infra/domains/default/groups/SG_M01_AVISE
     - /infra/domains/default/groups/SG_M01_ESX_IP
     services:
     - /infra/services/HTTPS
@@ -1168,7 +1168,7 @@ Firewall:
     - /infra/domains/default/groups/SG_W01_VC
     - /infra/domains/default/groups/SG_W01_NSX
     - /infra/domains/default/groups/SG_W01_AVI
-    - /infra/domains/default/groups/SG_W01_AVI_SE
+    - /infra/domains/default/groups/SG_W01_AVISE
     - /infra/domains/default/groups/SG_W01_ESX_IP
     services:
     - /infra/services/HTTPS

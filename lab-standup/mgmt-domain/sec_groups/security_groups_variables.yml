@@ -228,6 +228,14 @@ sec_groups:
   domain_id: default
   id: SG_M01_AVISE
   description: Security Group consisting of all MGMT AVI Service Engines VMs
+- display_name: SG_M01_SUP
+  expression:
+  - resource_type: IPAddressExpression
+    ip_addresses:
+    - 1.1.1.1
+  domain_id: default
+  id: SG_M01_SUP
+  description: Security Group consisting of all M01 Supervisor Management Ips
 - display_name: SG_W01_VC
   expression:
   - key: Name
