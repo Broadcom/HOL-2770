@@ -291,7 +291,7 @@ Firewall:
     disabled: true
   - sequence_number: 30
     display_name: VCF Cloud Proxy to VCF WLDs
-    id: VCF_Cloud_Proxy__to_VCF_WLDs
+    id: VCF_Cloud_Proxy_to_VCF_WLDs
     description: VCF Cloud Proxy to VCF WLDs
     source_groups:
     - /infra/domains/default/groups/SG_FLEET_OPS_COL
@@ -440,9 +440,9 @@ Firewall:
   sequence_number: 30
   rules:
   - sequence_number: 0
-    display_name: 'VCF MGMT WLD to VCF MGMT WLD  '
+    display_name: 'VCF MGMT WLD to VCF MGMT WLD'
     id: VCF_MGMT_WLD_to_VCF_MGMT_WLD__
-    description: 'VCF MGMT WLD to VCF MGMT WLD  '
+    description: 'VCF MGMT WLD to VCF MGMT WLD'
     source_groups:
     - /infra/domains/default/groups/SG_M01
     destination_groups:
@@ -485,9 +485,9 @@ Firewall:
     - ANY
     disabled: true
   - sequence_number: 30
-    display_name: VCF Cloud Proxy  to VCF FM WLD
-    id: VCF_Cloud_Proxy__to_VCF_FM_WLD
-    description: VCF Cloud Proxy  to VCF FM WLD
+    display_name: VCF Cloud Proxy to VCF FM WLD
+    id: VCF_Cloud_Proxy_to_VCF_FM_WLD
+    description: VCF Cloud Proxy to VCF FM WLD
     source_groups:
     - /infra/domains/default/groups/SG_FLEET_OPS_COL
     destination_groups:
@@ -632,9 +632,9 @@ Firewall:
     - ANY
     disabled: true
   - sequence_number: 30
-    display_name: VCF Cloud Proxy  to VCF FM WLD
-    id: VCF_Cloud_Proxy__to_VCF_FM_WLD
-    description: VCF Cloud Proxy  to VCF FM WLD
+    display_name: VCF Cloud Proxy to VCF FM WLD
+    id: VCF_Cloud_Proxy_to_VCF_FM_WLD
+    description: VCF Cloud Proxy to VCF FM WLD
     source_groups:
     - /infra/domains/default/groups/SG_FLEET_OPS_COL
     destination_groups:
@@ -695,8 +695,8 @@ Firewall:
     - ANY
     disabled: true
   - sequence_number: 70
-    display_name: vDefend License Hub  toWLD W01
-    id: vDefend_License_Hub__toWLD_W01
+    display_name: vDefend License Hub to WLD W01
+    id: vDefend_License_Hub_to_WLD_W01
     description: vDefend License Hub  to MGMT Domain
     source_groups:
     - /infra/domains/default/groups/SG_FLEET_LIC_HUB
