@@ -87,7 +87,7 @@ Firewall:
     source_groups:
     - /infra/domains/default/groups/SG_VCF_FLEET
     destination_groups:
-    - /infra/domains/default/groups/SG_SG_FLEET_OPS_LOGS
+    - /infra/domains/default/groups/SG_FLEET_MSVC
     - /infra/domains/default/groups/SG_SYSLOG_SVC
     services:
     - /infra/services/VCF_LOG_Services
@@ -440,9 +440,9 @@ Firewall:
   sequence_number: 30
   rules:
   - sequence_number: 0
-    display_name: 'VCF MGMT WLD to VCF MGMT WLD'
+    display_name: VCF MGMT WLD to VCF MGMT WLD
     id: VCF_MGMT_WLD_to_VCF_MGMT_WLD
-    description: 'VCF MGMT WLD to VCF MGMT WLD'
+    description: VCF MGMT WLD to VCF MGMT WLD
     source_groups:
     - /infra/domains/default/groups/SG_M01
     destination_groups:
@@ -517,9 +517,9 @@ Firewall:
     - ANY
     disabled: true
   - sequence_number: 50
-    display_name: 'VCF MGMT WLD to OPS NET Collectors'
+    display_name: VCF MGMT WLD to OPS NET Collectors
     id: VCF_MGMT_WLD_to_OPS_NET_Collectors
-    description: 'VCF MGMT WLD to OPS NET Collectors'
+    description: VCF MGMT WLD to OPS NET Collectors
     source_groups:
     - /infra/domains/default/groups/SG_M01
     destination_groups:
@@ -664,9 +664,9 @@ Firewall:
     - ANY
     disabled: true
   - sequence_number: 50
-    display_name: 'VCF WLD 01 to OPS NET Collectors'
+    display_name: VCF WLD 01 to OPS NET Collectors
     id: VCF_WLD_01_to_OPS_NET_Collectors
-    description: 'VCF WLD 01 to OPS NET Collectors'
+    description: VCF WLD 01 to OPS NET Collectors
     source_groups:
     - /infra/domains/default/groups/SG_W01
     destination_groups:
@@ -762,7 +762,7 @@ Firewall:
     - /infra/domains/default/groups/SG_FLEET_OPS
     destination_groups:
     - /infra/domains/default/groups/SG_FLEET_VCFA
-    - /infra/domains/default/groups/SG_FLEET_OPS_LOGS
+    - /infra/domains/default/groups/SG_FLEET_MSVC
     - /infra/domains/default/groups/SG_FLEET_OPS_NET
     - /infra/domains/default/groups/SG_FLEET_VCFA
     services:
@@ -773,11 +773,11 @@ Firewall:
     - ANY
     disabled: true
   - sequence_number: 20
-    display_name: SG_FLEET_OPS_LOGS to SG_FLEET_OPS
-    id: SG_FLEET_OPS_LOGS_to_SG_FLEET_OPS
-    description: SG_FLEET_OPS_LOGS to SG_FLEET_OPS
+    display_name: SG FLEET MSVC to FLEET OPS
+    id: SG_FLEET_MSVC_to_SG_FLEET_OPS
+    description: SG FLEET MSVC to FLEET OPS
     source_groups:
-    - /infra/domains/default/groups/SG_FLEET_OPS_LOGS
+    - /infra/domains/default/groups/SG_FLEET_MSVC
     destination_groups:
     - /infra/domains/default/groups/SG_FLEET_OPS
     services:
