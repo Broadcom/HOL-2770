@@ -23,7 +23,7 @@ auyrv6ve2i.execute-api.us-west-2.amazonaws.com
 access.broadcom.com
 prod-cdn-downloads.pulse.broadcom.com
 portal.pulse.broadcom.com
-*.prod.nsxti.vmware.com
+prod.nsxti.vmware.com
 nsx.lastline.com
 nsx.west.us.lastline.com
 registry.k8s.io

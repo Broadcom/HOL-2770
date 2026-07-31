@@ -773,9 +773,9 @@ Firewall:
     - ANY
     disabled: true
   - sequence_number: 20
-    display_name: SG FLEET MSVC to FLEET OPS
+    display_name: FLEET MSVC to FLEET OPS
     id: SG_FLEET_MSVC_to_SG_FLEET_OPS
-    description: SG FLEET MSVC to FLEET OPS
+    description: FLEET MSVC to FLEET OPS
     source_groups:
     - /infra/domains/default/groups/SG_FLEET_MSVC
     destination_groups:
@@ -824,7 +824,7 @@ Firewall:
     source_groups:
     - /infra/domains/default/groups/SG_FLEET_OPSNET_COL
     destination_groups:
-    - /infra/domains/default/groups/SG_FLEET_OPS_NET
+    - /infra/domains/default/groups/SG_FLEET_OPSNET
     services:
     - /infra/services/HTTPS
     action: ALLOW
