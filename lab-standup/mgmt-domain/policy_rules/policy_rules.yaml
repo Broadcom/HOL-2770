@@ -16,6 +16,7 @@
     scope: "{{ DFW.scope }}"
     description: "{{ DFW.description }}"
     sequence_number: "{{ DFW.sequence_number }}"
+    connectivity_strategy: NONE
     rules: "{{ DFW.rules }}"
 
 
