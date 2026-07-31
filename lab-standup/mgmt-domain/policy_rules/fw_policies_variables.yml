@@ -910,7 +910,7 @@ Firewall:
     destination_groups:
     - /infra/domains/default/groups/SG_M01_ESX_IP
     - /infra/domains/default/groups/SG_M01_NSX
-    #- /infra/domains/default/groups/SG_M01_SUP
+    - /infra/domains/default/groups/SG_M01_SUP
     - /infra/domains/default/groups/SG_M01_VC
     services:
     - /infra/services/ESXi_Inbound_Access
