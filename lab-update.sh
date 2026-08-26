@@ -28,6 +28,10 @@ if [ -f "$FTorPROD" ]; then
     #Enable Flowgen Topologies needed at boot. Any changes should be made in the enable-vmflowgen.sh file by uncommenting the line
     chmod +x /vpodrepo/2027-labs/2770/lab-standup/enable-vmflowgen.sh
     /bin/bash /vpodrepo/2027-labs/2770/lab-standup/enable-vmflowgen.sh | tee -a /lmchol/hol/labstartup.log >> /home/holuser/hol/labstartup.log 2>&1
+
+    #Correct Browser iregularities
+    chmod +x /vpodrepo/2027-labs/2770/lab-standup/browser-fix.sh
+    /bin/bash /vpodrepo/2027-labs/2770/lab-standup/enable-vmflowgen.sh
 fi
 
 # Example to echo text into file on Console VM. 
