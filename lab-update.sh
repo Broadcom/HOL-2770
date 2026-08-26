@@ -31,7 +31,7 @@ if [ -f "$FTorPROD" ]; then
 
     #Correct Browser iregularities
     chmod +x /vpodrepo/2027-labs/2770/lab-standup/browser-fix.sh
-    /bin/bash /vpodrepo/2027-labs/2770/lab-standup/enable-vmflowgen.sh
+    /bin/bash /vpodrepo/2027-labs/2770/lab-standup/browser-fix.sh
 fi
 
 # Example to echo text into file on Console VM. 
