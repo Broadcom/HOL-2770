@@ -6,8 +6,8 @@
 
 #remove and replace the places.sqlite file. This contains book marks and history
 rm /lmchol/home/holuser/snap/firefox/common/.mozilla/firefox/hu6lbvyx.default/places.sqlite
-cp /vpodrepo/2027-labs/2770/lab-startup/firefox/places.sqlite /lmchol/home/holuser/snap/firefox/common/.mozilla/firefox/hu6lbvyx.default/places.sqlite
+cp /vpodrepo/2027-labs/2770/lab-standup/firefox/places.sqlite /lmchol/home/holuser/snap/firefox/common/.mozilla/firefox/hu6lbvyx.default/places.sqlite
 
 #rmove and replace the data folder which contains the data for the individual websites
 rm -rf /lmchol/home/holuser/snap/firefox/common/.mozilla/firefox/hu6lbvyx.default/storage/default/
-unzip /vpodrepo/2027-labs/2770/lab-startup/firefox/default.zip -d /lmchol/home/holuser/snap/firefox/common/.mozilla/firefox/hu6lbvyx.default/storage/
+unzip /vpodrepo/2027-labs/2770/lab-standup/firefox/default.zip -d /lmchol/
