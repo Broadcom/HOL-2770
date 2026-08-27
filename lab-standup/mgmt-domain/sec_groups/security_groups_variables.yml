@@ -75,6 +75,7 @@ sec_groups:
     member_type: VirtualMachine
     resource_type: Condition
     value: opsnet-
+    operator: STARTSWITH
   domain_id: default
   id: SG_FLEET_OPSNET
   description: Security Group consisting of all FLEET OPS NET VMs
@@ -108,6 +109,7 @@ sec_groups:
     member_type: VirtualMachine
     resource_type: Condition
     value: vcf-a
+    operator: STARTSWITH
   domain_id: default
   id: SG_FLEET_VCFA
   description: Security Group consisting of all FLEET Automation VMs
@@ -135,6 +137,7 @@ sec_groups:
     member_type: VirtualMachine
     resource_type: Condition
     value: vsp-
+    operator: STARTSWITH
   domain_id: default
   id: SG_FLEET_MSVC
   description: Security Group consisting of all FLEET Management Services VMs
@@ -144,6 +147,7 @@ sec_groups:
     member_type: VirtualMachine
     resource_type: Condition
     value: vc-mgmt-
+    operator: STARTSWITH
   domain_id: default
   id: SG_M01_VC
   description: Security Group consisting of all MGMT VC VMs
@@ -153,6 +157,7 @@ sec_groups:
     member_type: VirtualMachine
     resource_type: Condition
     value: nsx-mgmt-
+    operator: STARTSWITH
   domain_id: default
   id: SG_M01_NSX
   description: Security Group consisting of all MGMT NSX VMs
@@ -161,6 +166,7 @@ sec_groups:
   - resource_type: IPAddressExpression
     ip_addresses:
     - 10.1.1.101-10.1.1.104
+    - 10.1.1.114-10.1.1.117
   domain_id: default
   id: SG_M01_ESX_IP
   description: Security Group consisting of all MGMT ESXi IPs
@@ -198,6 +204,7 @@ sec_groups:
     member_type: VirtualMachine
     resource_type: Condition
     value: ssp-
+    operator: STARTSWITH
   domain_id: default
   id: SG_M01_SSP
   description: Security Group consisting of all MGMT SSP VMs
@@ -215,6 +222,7 @@ sec_groups:
     member_type: VirtualMachine
     resource_type: Condition
     value: alb-
+    operator: STARTSWITH
   domain_id: default
   id: SG_M01_AVI
   description: Security Group consisting of all MGMT AVI Controller VMs
@@ -242,6 +250,7 @@ sec_groups:
     member_type: VirtualMachine
     resource_type: Condition
     value: vc-wld01-
+    operator: STARTSWITH
   domain_id: default
   id: SG_W01_VC
   description: Security Group consisting of all W01 VC VMs
@@ -251,6 +260,7 @@ sec_groups:
     member_type: VirtualMachine
     resource_type: Condition
     value: nsx-wld01-
+    operator: STARTSWITH
   domain_id: default
   id: SG_W01_NSX
   description: Security Group consisting of all W01 NSX VMs
@@ -296,6 +306,7 @@ sec_groups:
     member_type: VirtualMachine
     resource_type: Condition
     value: ssp-
+    operator: STARTSWITH
   domain_id: default
   id: SG_W01_SSP
   description: Security Group consisting of all W01 SSP VMs
