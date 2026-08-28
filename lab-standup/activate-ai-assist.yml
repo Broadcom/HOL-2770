@@ -18,7 +18,7 @@
         headers: "{{ api_headers }}"
         body_format: json
         body:
-          state: "ENABLED"
+          action: "DEPLOY"
         status_code: [200, 202, 204]
         validate_certs: false
       register: step1_result
