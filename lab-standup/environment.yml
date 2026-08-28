@@ -66,3 +66,13 @@
     tier1_wld_display_name: "t1-wld01-a"
     edge_uplink_policy1: "nsx-edge-multiple-vteps-uplink-profile"
     #edge_uplink_policy2: "VCF-edge_EC-01_uplink2-named-teaming-policy"
+
+    ##SSP Related Variable
+    ssp_host: "https://ssp.site-a.vcf.lab"
+    ssp_username: "admin"
+    ssp_password: "{{ lab_pw }}"
+    
+    # Common headers for API requests
+    api_headers:
+      Content-Type: "application/json"
+      Accept: "application/json"

@@ -1,0 +1,84 @@
+---
+- name: Configure Broadcom AI Assistant for Firewall (Basic Auth)
+  hosts: localhost
+  gather_facts: false
+  connection: local
+  become: no
+  vars_files:
+    - environment.yml
+
+  tasks:
+    - name: "Step 1: Activate feature on SSP"
+      ansible.builtin.uri:
+        url: "{{ ssp_host }}/ssp/lcm/features/AI_ASSISTANT_PLATFORM"
+        method: PUT
+        url_username: "{{ ssp_username }}"
+        url_password: "{{ ssp_password }}"
+        force_basic_auth: true
+        headers: "{{ api_headers }}"
+        body_format: json
+        body:
+          state: "ENABLED"
+        status_code: [200, 202, 204]
+        validate_certs: false
+      register: step1_result
+
+    - name: "Step 2: Acknowledge privacy agreement"
+      ansible.builtin.uri:
+        url: "{{ ssp_host }}/ai-assistants/acknowledgement"
+        method: PUT
+        url_username: "{{ ssp_username }}"
+        url_password: "{{ ssp_password }}"
+        force_basic_auth: true
+        headers: "{{ api_headers }}"
+        body_format: json
+        body:
+          acknowledgment: true
+        status_code: [200, 202, 204]
+        validate_certs: false
+      register: step2_result
+
+    - name: "Step 3: Configure Broadcom account"
+      ansible.builtin.uri:
+        url: "{{ ssp_host }}/ai-assistants/broadcom-account-config"
+        method: PUT
+        url_username: "{{ ssp_username }}"
+        url_password: "{{ ssp_password }}"
+        force_basic_auth: true
+        headers: "{{ api_headers }}"
+        body_format: json
+        body:
+          llm_region: "us-east1"
+        status_code: [200, 202, 204]
+        validate_certs: false
+      register: step3_result
+
+    - name: "Step 4: Choose Broadcom account"
+      ansible.builtin.uri:
+        url: "{{ ssp_host }}/ai-assistants/platform"
+        method: PUT
+        url_username: "{{ ssp_username }}"
+        url_password: "{{ ssp_password }}"
+        force_basic_auth: true
+        headers: "{{ api_headers }}"
+        body_format: json
+        body:
+          is_broadcom_account: true
+        status_code: [200, 202, 204]
+        validate_certs: false
+      register: step4_result
+
+    - name: "Step 5: Set AI Bundle Download Mode to MANUAL mode"
+      ansible.builtin.uri:
+        url: "{{ ssp_host }}/ai-assistants/platform/firewall"
+        method: PUT
+        url_username: "{{ ssp_username }}"
+        url_password: "{{ ssp_password }}"
+        force_basic_auth: true
+        headers: "{{ api_headers }}"
+        body_format: json
+        body:
+          bundle_auto_download: false
+        status_code: [200, 202, 204]
+        validate_certs: false
+      register: step5_result
