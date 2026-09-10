@@ -24,8 +24,11 @@ access.broadcom.com
 prod-cdn-downloads.pulse.broadcom.com
 portal.pulse.broadcom.com
 prod.nsxti.vmware.com
+management.lastline.com
 nsx.lastline.com
 nsx.west.us.lastline.com
 registry.k8s.io
 googleapis.com
 services.ai.azure.com
+udp.anonvpn.broadcom.com
+tcp.anonvpn.broadcom.com
